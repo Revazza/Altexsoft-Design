@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Actor&display=swap");
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+}
+
+.logo h1 {
+  font-family: "Actor", sans-serif;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.nav-wrapper {
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-list-wrapper {
+  width: 85%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 55%;
+}
+
+.nav-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Acme", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 300ms;
+}
+.nav-link a:hover {
+  transition: 300ms;
+  opacity: 0.5;
+}
+.nav-link .active::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  border-bottom: 1px solid #FFFFFF;
+  top: 32px;
+  left: -5px;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 2.5px;
+  -webkit-animation-name: showBottomBorder;
+          animation-name: showBottomBorder;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes showBottomBorder {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes showBottomBorder {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.nav-btn-wrapper {
+  height: inherit;
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-btn {
+  height: 50%;
+  width: 50%;
+}
+.nav-btn button {
+  border: 1.5px solid #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  font-family: "Acme", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 300ms;
+}
+.nav-btn button:hover {
+  background-color: rgba(255, 255, 255, 0.897);
+  opacity: 1;
+  color: #22bf95;
+}
+.nav-btn button:hover {
+  transition: 300ms;
+  opacity: 0.5;
+}
+.nav-btn button:hover:hover {
+  background-color: rgba(255, 255, 255, 0.897);
+  opacity: 1;
+  color: #22bf95;
+}
+
+#secondNavBtn {
+  width: 30%;
+}/*# sourceMappingURL=Header.css.map */

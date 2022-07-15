@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Actor&display=swap");
+.choosen-section {
+  width: 100%;
+  height: 500px;
+  background-image: url("../../../public/assets/SKOUT-Background_Teal_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.choosen-section h1 {
+  font-size: 110px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Actor", sans-serif;
+}/*# sourceMappingURL=Main.css.map */

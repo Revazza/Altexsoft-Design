@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Actor&display=swap");
+
+//height
+$headerHeight: 80px;
+
+//fonts
+$font-actor: "Actor", sans-serif;
+$nav-font: "Acme", sans-serif;
+$color-nav: #FFFFFF;
+//font-size
+
+
+//button
+
+
+
+//hover
+@mixin hover
+{
+  transition: 300ms;
+  @content;
+  &:hover{
+    transition: 300ms;
+    opacity: 0.5;
+    @content;
+  }
+}
+
+@mixin linkStyles($color:#FFFFFF)
+{
+  text-decoration: none;
+  color: $color;
+}
+
+@mixin justifyCenter($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin justifyAround($direction: row) {
+  @include justifyCenter($direction);
+  justify-content: space-around;
+}
+@mixin justifyBetween($direction: row) {
+  @include justifyCenter($direction);
+  justify-content: space-between;
+}
+//hover
+@mixin hoverStyles($primaryColor) {
+  color: $primaryColor;
+  transition: 300ms;
+
+  &:hover {
+    transition: 300ms;
+    color: gray;
+  }
+}
