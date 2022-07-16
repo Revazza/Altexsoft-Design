@@ -1,0 +1,88 @@
+@import '../../variables/variables.scss';
+
+$primaryColor:#7F7F7F;
+
+footer{
+  width:100%;
+  background-color: #F2F2F2;
+  height: 500px;
+  padding: 40px 0;
+}
+
+.footer-info{
+  width: 80%;
+  margin: 0 auto;
+  height: 75%;
+  @include justifyBetween;
+}
+#firstFooterLink{
+  margin-top: 0;
+}
+
+.footer-social{
+  width: 80%;
+  margin: 0 auto;
+  height: 10%;
+  border-top: 2px solid #B2B2B2;
+  padding: 20px 0;
+  @include justifyBetween;
+}
+.footer-social-icons{
+  width: 26%;
+  @include justifyBetween;
+  .social-icon{
+    cursor: pointer;
+  }
+}
+
+
+.footer-website-title{
+  font-family: $font-aloc;
+  @include textLayout;
+  h3{
+    font-size: 30px;
+  }
+  span{
+    font-size: 8px;
+    float: right;
+
+  }
+  color: $primaryColor;
+}
+
+
+.footer-link-wrapper{
+  width: 25%;
+  height: 100%;
+  a{
+    text-decoration: none;
+    font-size: 14px;
+    @include hover{
+      &:hover{
+        color: #22BF95;
+        text-decoration: underline;
+      }
+    }
+  }
+  a,p{
+    font-family: $nav-font;
+    @include textLayout;
+    color: $primaryColor;
+    
+  }
+  p{
+    margin-top: 5px;
+    font-size: 20px;
+  }
+}
+.footer-locations{
+  height: 100%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(1,100%);
+}
+.footer-link{
+  margin-top: 35px;
+}
+
+

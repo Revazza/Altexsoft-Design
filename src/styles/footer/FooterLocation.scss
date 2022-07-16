@@ -1,0 +1,52 @@
+@import "../../variables/variables.scss";
+
+$primaryColor: #7f7f7f;
+
+.footer-location {
+  height: 100%;
+  border-top: 2px solid #22bf95;
+  padding: 10px 0;
+  box-sizing: border-box;
+  @include justifyBetween;
+}
+
+.footer-loc-address,
+.footer-loc-map,
+.footer-loc-phone,
+.footer-loc-title {
+  height: inherit;
+  label,a {
+    font-family: $font-aloc;
+    color: $primaryColor;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}
+.footer-loc-title label {
+  font-size: 20px;
+}
+
+.footer-loc-title {
+  width: 30%;
+}
+.footer-loc-phone {
+  width: 27%;
+}
+.footer-loc-address {
+  width: 30%;
+}
+.footer-loc-map {
+  width: 13%;
+  a {
+    text-decoration: none;
+    color: #22bf95;
+    @include hover{
+      &:hover{
+        color: #10926f;
+        opacity: 1;
+        text-decoration: underline;
+      }
+    }
+    float: right;
+  }
+}

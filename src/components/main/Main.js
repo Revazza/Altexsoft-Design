@@ -5,6 +5,7 @@ import SubNav from './SubNav';
 import Tips from './Tips/Tips';
 import Glossary from './Glossary/Glossary';
 import Faqs from './FAQS/Faqs';
+import Footer from '../footer/Footer';
 
 function Main() {
 
@@ -21,6 +22,7 @@ function Main() {
         <Glossary />
         <Faqs />
       </main>
+      <Footer />
     </main>
   )
 }
