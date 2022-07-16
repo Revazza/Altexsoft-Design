@@ -10,7 +10,7 @@ function SubNav() {
       </div>
       <div className="vertical-line"></div>
       <div className="subnav-item">
-        <a href="flossary">flossary</a>
+        <a href="#glossarySection">glossary</a>
       </div>
       <div className="vertical-line"></div>
       <div className="subnav-item">
