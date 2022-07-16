@@ -56,6 +56,8 @@ $color-nav: #FFFFFF;
   color: $color;
 }
 
+
+
 @mixin justifyCenter($direction: row) {
   display: flex;
   justify-content: center;

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../styles/main/Glossary/Glossary.css";
+import GlossaryAttributes from "./GlossaryAttributes";
 
 function Glossary() {
   return (
@@ -23,6 +24,8 @@ function Glossary() {
           </div>
         </div>
       </section>
+
+      <GlossaryAttributes />
     </section>
   );
 }

@@ -1,0 +1,90 @@
+@import "../../../variables/variables.scss";
+
+.gloss-attr-wrapper {
+  //parent is relative - Glossary;
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  top: 110px;
+  left: -131px;
+  background: #ffffff;
+  box-shadow: 0px 12px 24px #e5e5e5;
+  border-radius: 5px;
+}
+
+.gloss-prev-btn,
+.gloss-next-btn {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  cursor: pointer;
+}
+.gloss-next-btn {
+  right: 17px;
+  top: 5px;
+}
+.gloss-prev-btn {
+  img {
+    transform: rotate(180deg);
+  }
+  right: 17px;
+  top: 30px;
+}
+
+.gloss-disabled {
+  opacity: 0.5;
+}
+
+.gloss-attr-list {
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+.gloss-list {
+  width: 80%;
+  height: 100%;
+  ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 60%;
+    float: right;
+    li {
+      list-style: none;
+      font-family: $font-aloc;
+      font-size: 14px;
+      margin-top: 6px;
+      color: #7f7f7f;
+      cursor: pointer;
+      @include hover{
+        &:hover{
+          color: black;
+          opacity: 1;
+        }
+      };
+    }
+    li:hover + .gloss-list-item-line {
+      display: block;
+    }
+  }
+}
+.gloss-list-item {
+  position: relative;
+}
+
+.gloss-list-item-line {
+  display: none;
+  position: absolute;
+  width: 90px;
+  height: 1.5px;
+  background-color: #22BF95;
+  left: -112px;
+  top: 50%;
+  border-radius: 2px;
+}

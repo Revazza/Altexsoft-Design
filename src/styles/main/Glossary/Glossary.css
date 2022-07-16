@@ -3,6 +3,7 @@
   margin-top: 120px;
   width: 100%;
   border-top: 2px solid #b2b2b2;
+  position: relative;
 }
 .glossary-wrapper h3 {
   margin-top: 20px;
@@ -21,7 +22,7 @@
 .glossary-topic {
   margin-top: 50px;
   width: 100%;
-  height: 420px;
+  height: 470px;
   background-image: url("../../../../public/assets/SKOUT-Background_Pearl_1.png");
   background-repeat: no-repeat;
   background-size: cover;
