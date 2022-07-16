@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../styles/header/Header.css";
 
 function Header() {
+  //changing header background
+  const [headerClass, setHeaderClass] = useState("header-wrapper");
+
+  const changeBackground = () => {
+    if (window.scrollY > 150 && !headerClass.includes("header-active-bckg")) {
+      setHeaderClass("header-wrapper header-active-bckg");
+    } else if (window.scrollY < 150) {
+      setHeaderClass("header-wrapper");
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <header className="header-wrapper">
+    <header className={headerClass}>
       <div className="nav-wrapper">
         <div className="logo">
           <h1>SKOUT</h1>

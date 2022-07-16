@@ -21,7 +21,7 @@ function FaqsItem(props) {
           </div>
           <div className="faqs-item-arrow">
             <img
-              className={showAnswer && "rotate-arrow"}
+              className={showAnswer ? "rotate-arrow":""}
               src="./assets/dropdown-arrow.png"
               alt="open answer"
             />

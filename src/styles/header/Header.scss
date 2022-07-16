@@ -4,7 +4,19 @@
   position: fixed;
   width: 100%;
   height: $headerHeight;
-  background-color: transparent;
+  background: rgb(44, 221, 236);
+  background: linear-gradient(
+    90deg,
+    rgba(44, 221, 236, 1) 0%,
+    rgba(0, 248, 110, 1) 100%
+  );
+  z-index: 40;
+  transition: 300ms ease-in;
+}
+
+.header-active-bckg{
+  transition: 300ms ease-in;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .logo {
@@ -47,8 +59,8 @@
     content: "";
     position: absolute;
     height: 2px;
-    width: 50%; 
-    border-bottom: 1px solid #FFFFFF;
+    width: 50%;
+    border-bottom: 1px solid #ffffff;
     top: 32px;
     left: -5px;
     right: 0;
@@ -59,17 +71,15 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
   }
- 
 
   @keyframes showBottomBorder {
-    from{
+    from {
       width: 0%;
     }
-    to{
+    to {
       width: 50%;
     }
   }
-
 }
 
 .nav-btn-wrapper {

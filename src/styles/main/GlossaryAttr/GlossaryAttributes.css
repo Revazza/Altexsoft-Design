@@ -68,7 +68,7 @@
   transition: 300ms;
 }
 .gloss-list ul li:hover {
-  color: black;
+  color: rgba(0, 0, 0, 0.788);
   opacity: 1;
 }
 .gloss-list ul li:hover {
@@ -76,7 +76,7 @@
   opacity: 0.5;
 }
 .gloss-list ul li:hover:hover {
-  color: black;
+  color: rgba(0, 0, 0, 0.788);
   opacity: 1;
 }
 .gloss-list ul li:hover + .gloss-list-item-line {
@@ -92,8 +92,17 @@
   position: absolute;
   width: 90px;
   height: 1.5px;
-  background-color: #22BF95;
+  background-color: #22bf95;
   left: -112px;
   top: 50%;
   border-radius: 2px;
+}
+
+.gloss-item-selected li {
+  color: black !important;
+}
+.gloss-item-selected div {
+  display: block;
+  height: 2px;
+  background-color: #22bf95;
 }/*# sourceMappingURL=GlossaryAttributes.css.map */

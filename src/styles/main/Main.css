@@ -2,9 +2,8 @@
 .choosen-section {
   width: 100%;
   height: 500px;
-  background-image: url("../../../public/assets/SKOUT-Background_Teal_2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(44, 221, 236);
+  background: linear-gradient(90deg, rgb(44, 221, 236) 0%, rgb(0, 248, 110) 100%);
   display: flex;
   justify-content: center;
   align-items: center;

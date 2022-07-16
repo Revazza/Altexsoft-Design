@@ -3,7 +3,15 @@
   position: fixed;
   width: 100%;
   height: 80px;
-  background-color: transparent;
+  background: rgb(44, 221, 236);
+  background: linear-gradient(90deg, rgb(44, 221, 236) 0%, rgb(0, 248, 110) 100%);
+  z-index: 40;
+  transition: 300ms ease-in;
+}
+
+.header-active-bckg {
+  transition: 300ms ease-in;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .logo h1 {
@@ -68,7 +76,7 @@
   position: absolute;
   height: 2px;
   width: 50%;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
   top: 32px;
   left: -5px;
   right: 0;

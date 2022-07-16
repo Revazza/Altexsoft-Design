@@ -25,7 +25,7 @@ const items = [
   "Worm",
 ];
 
-function GlossaryAttributes() {
+function GlossaryAttributes(props) {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentItems, setCurrentItems] = useState();
   const [itemOffSett, setItemOffSett] = useState(0);
@@ -33,6 +33,10 @@ function GlossaryAttributes() {
   const [prevBtnClass, setPrevBtnClass] = useState(
     "gloss-prev-btn gloss-disabled"
   );
+
+  const handleAttributeClick = (event) => {
+    props.onChangeSection(event.target.id);
+  };
 
   let itemsPerPage = 15;
 
@@ -94,8 +98,17 @@ function GlossaryAttributes() {
         <div className="gloss-list">
           <ul>
             {currentItems?.map((item) => (
-              <div className="gloss-list-item">
-                <li>{item}</li>
+              <div
+                className={
+                  props.currentSection === item
+                    ? "gloss-list-item gloss-item-selected"
+                    : "gloss-list-item"
+                }
+                key={item}
+              >
+                <li id={item} onClick={handleAttributeClick}>
+                  {item}
+                </li>
                 <div className="gloss-list-item-line"></div>
               </div>
             ))}

@@ -62,12 +62,12 @@
       margin-top: 6px;
       color: #7f7f7f;
       cursor: pointer;
-      @include hover{
-        &:hover{
-          color: black;
+      @include hover {
+        &:hover {
+          color: rgba(0, 0, 0, 0.788);
           opacity: 1;
         }
-      };
+      }
     }
     li:hover + .gloss-list-item-line {
       display: block;
@@ -83,8 +83,18 @@
   position: absolute;
   width: 90px;
   height: 1.5px;
-  background-color: #22BF95;
+  background-color: #22bf95;
   left: -112px;
   top: 50%;
   border-radius: 2px;
+}
+.gloss-item-selected {
+  li {
+    color: black !important;
+  }
+  div {
+    display: block;
+    height: 2px;
+    background-color: #22bf95;
+  }
 }

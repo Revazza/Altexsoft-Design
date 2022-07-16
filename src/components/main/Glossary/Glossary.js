@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../styles/main/Glossary/Glossary.css";
 import GlossaryAttributes from "./GlossaryAttributes";
 
 function Glossary() {
+  const [currentSection, setCurrentSection] = useState("Botnet");
+
+  const handleSectionChange = (newSection) => {
+    setCurrentSection(newSection);
+  };
+
   return (
     <section className="glossary-wrapper" id="glossarySection">
       <h3>
@@ -11,7 +17,7 @@ function Glossary() {
 
       <section className="glossary-topic">
         <div className="glossary-description">
-          <h3>Virus</h3>
+          <h3>{currentSection}</h3>
           <div className="glossary-topic-description">
             <div className="glossary-vertical-line"></div>
             <article className="glossary-article">
@@ -25,7 +31,7 @@ function Glossary() {
         </div>
       </section>
 
-      <GlossaryAttributes />
+      <GlossaryAttributes onChangeSection={handleSectionChange} currentSection={currentSection}/>
     </section>
   );
 }
