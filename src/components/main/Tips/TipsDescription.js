@@ -6,7 +6,7 @@ const TipsDescription = (props) => {
     <section className="tips-description">
       <div className="tips-photo">
         <div className="tips-title">
-          <h3>System Patching</h3>
+          <h3>{props.title}</h3>
           <div className="tips-img-wrapper">
             <img src="./assets/circle.png" alt="tips" />
           </div>
@@ -14,15 +14,9 @@ const TipsDescription = (props) => {
       </div>
       <article className="tips-article">
         <p>
-          Theres nothing hackers love more than a dismissed update reminder. We
-          keep our teams computers in shape and up to date so that they arent
-          subject to attacks that could otherwise be avoided. <br />
-          <br /> Not properly updating your systems makes you an easy to reach
-          target and hackers will often go after the lowest hanging fruit. When
-          it comes to maintaining a strong cybersecurity network the best thing
-          a user can do is to prevent problems before they occur, and the
-          easiest way to do that is by making sure that all systems are updated
-          and updated regularly.
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor.<br/><br/> at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
+        
+        
         </p>
         <div className="after-article">
           <div className="tip-oval">

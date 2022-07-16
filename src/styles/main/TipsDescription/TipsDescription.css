@@ -2,7 +2,7 @@
 .tips-description {
   margin: 40px 0px;
   width: 90%;
-  height: 400px;
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
 
 .tips-article {
   width: 52%;
-  height: inherit;
+  min-height: 400px;
   padding: 40px 0;
   box-sizing: border-box;
 }
@@ -26,6 +26,7 @@
   font-family: "Aclonica", sans-serif;
   font-size: 16px;
   color: #191919;
+  padding-bottom: 40px;
 }
 
 .tips-title {
@@ -84,4 +85,5 @@
 .after-article .tip-report p {
   color: #7F7F7F;
   font-size: 13px;
+  padding-bottom: 0;
 }/*# sourceMappingURL=TipsDescription.css.map */

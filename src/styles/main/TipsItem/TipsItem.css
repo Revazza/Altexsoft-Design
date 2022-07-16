@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Actor&display=swap");
+@-webkit-keyframes showSomething {
+  from {
+    height: 0;
+  }
+  to {
+    height: 400px;
+  }
+}
+@keyframes showSomething {
+  from {
+    height: 0;
+  }
+  to {
+    height: 400px;
+  }
+}
 .tips-item {
   border-top: 1px solid #22bf95;
   cursor: pointer;

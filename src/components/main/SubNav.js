@@ -6,15 +6,15 @@ function SubNav() {
   return (
     <section className="subnav-wrapper">
       <div className="subnav-item">
-        <NavLink to="tips">tips</NavLink>
+        <a href="#tipsSection">tips</a>
       </div>
       <div className="vertical-line"></div>
       <div className="subnav-item">
-        <NavLink to="flossary">flossary</NavLink>
+        <a href="flossary">flossary</a>
       </div>
       <div className="vertical-line"></div>
       <div className="subnav-item">
-        <NavLink to="faqs">faqs</NavLink>
+        <a href="faqs">faqs</a>
       </div>
     </section>
   );
