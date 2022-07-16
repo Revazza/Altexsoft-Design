@@ -80,3 +80,19 @@ $color-nav: #FFFFFF;
     color: gray;
   }
 }
+
+
+@mixin showItem {
+  animation-name: showSomething;
+  animation-timing-function: ease-in;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showSomething {
+  from{
+    height: 0;
+  }to{
+    height: 400px;
+  }
+}

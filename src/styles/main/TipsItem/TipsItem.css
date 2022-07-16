@@ -2,21 +2,8 @@
 .tips-item {
   border-top: 1px solid #22bf95;
   cursor: pointer;
-  transition: 300ms;
   position: relative;
   min-height: 100px;
-}
-.tips-item:hover {
-  opacity: 1;
-  background-color: rgba(128, 128, 128, 0.199);
-}
-.tips-item:hover {
-  transition: 300ms;
-  opacity: 0.5;
-}
-.tips-item:hover:hover {
-  opacity: 1;
-  background-color: rgba(128, 128, 128, 0.199);
 }
 
 .tips-header {
@@ -26,6 +13,19 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  transition: 300ms;
+}
+.tips-header:hover {
+  opacity: 1;
+  background-color: rgba(128, 128, 128, 0.199);
+}
+.tips-header:hover {
+  transition: 300ms;
+  opacity: 0.5;
+}
+.tips-header:hover:hover {
+  opacity: 1;
+  background-color: rgba(128, 128, 128, 0.199);
 }
 .tips-header .tips-number {
   width: 10%;
@@ -60,7 +60,7 @@
   border-radius: 100%;
   position: absolute;
   right: 30px;
-  top: 37%;
+  top: 35px;
 }
 
 .crossX,

@@ -1,1 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Actor&display=swap");/*# sourceMappingURL=variables.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Actor&display=swap");
+@-webkit-keyframes showSomething {
+  from {
+    height: 0;
+  }
+  to {
+    height: 400px;
+  }
+}
+@keyframes showSomething {
+  from {
+    height: 0;
+  }
+  to {
+    height: 400px;
+  }
+}/*# sourceMappingURL=variables.css.map */

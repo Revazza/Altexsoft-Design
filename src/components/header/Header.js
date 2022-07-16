@@ -20,7 +20,6 @@ function Header() {
               >
                 Why Skout
               </NavLink>
-              <div className="underline"></div>
             </div>
             <div className="nav-link">
               <NavLink
@@ -31,7 +30,6 @@ function Header() {
               >
                 Products
               </NavLink>
-              <div className="underline"></div>
             </div>
             <div className="nav-link">
               <NavLink
@@ -42,7 +40,6 @@ function Header() {
               >
                 Partners
               </NavLink>
-              <div className="underline"></div>
             </div>
             <div className="nav-link">
               <NavLink
@@ -53,7 +50,6 @@ function Header() {
               >
                 Company
               </NavLink>
-              <div className="underline"></div>
             </div>
             <div className="nav-link">
               <NavLink
@@ -64,7 +60,6 @@ function Header() {
               >
                 Tips & Tools
               </NavLink>
-              <div className="underline"></div>
             </div>
             <div className="nav-link">
               <NavLink
@@ -75,7 +70,6 @@ function Header() {
               >
                 Blog
               </NavLink>
-              <div className="underline"></div>
             </div>
           </nav>
           <div className="nav-btn-wrapper">

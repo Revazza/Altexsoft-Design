@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Actor&display=swap");
+.tips-description {
+  margin: 40px 0px;
+  width: 90%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tips-photo {
+  height: inherit;
+  width: 35%;
+}
+
+.tips-article {
+  width: 52%;
+  height: inherit;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+.tips-article p {
+  font-family: "Aclonica", sans-serif;
+  font-size: 16px;
+  color: #191919;
+}
+
+.tips-title {
+  height: inherit;
+}
+.tips-title h3 {
+  margin: 0;
+  font-family: "Aclonica", sans-serif;
+  text-transform: capitalize;
+  color: black;
+  min-height: 80px;
+  word-wrap: break-word;
+}
+
+.tips-img-wrapper {
+  width: 100%;
+  height: 70%;
+}
+.tips-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.after-article {
+  height: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.after-article .tip-oval {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  border: 1px solid #B2B2B2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.after-article .tip-oval span {
+  font-family: "Actor", sans-serif;
+  color: #B2B2B2;
+}
+.after-article .tip-report {
+  margin-left: 20px;
+}
+.after-article .tip-report p {
+  color: #7F7F7F;
+  font-size: 13px;
+}/*# sourceMappingURL=TipsDescription.css.map */

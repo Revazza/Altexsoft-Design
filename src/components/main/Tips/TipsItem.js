@@ -3,17 +3,17 @@ import "../../../styles/main/TipsItem/TipsItem.css";
 import TipsDescription from "./TipsDescription";
 
 function TipsItem(props) {
-  const [showDescription, setShowDescription] = useState(false);
+  const [showDescription, setShowDescription] = useState(true);
 
   const handleShowDescription = () => {
     setShowDescription((prevState) => !prevState);
   };
 
   return (
-    <div className="tips-item" onClick={handleShowDescription}>
+    <div className="tips-item">
       {!showDescription && (
         <React.Fragment>
-          <div className="tips-header">
+          <div className="tips-header" onClick={handleShowDescription}>
             <div className="tips-number">
               <p>1</p>
             </div>
@@ -21,12 +21,12 @@ function TipsItem(props) {
               <p>Some Title</p>
             </div>
           </div>
-          <div className="tips-oval">
-            <div className="crossX"></div>
-            {!showDescription && <div className="crossY"></div>}
-          </div>
         </React.Fragment>
       )}
+      <div className="tips-oval" onClick={handleShowDescription}>
+        <div className="crossX"></div>
+        {!showDescription && <div className="crossY"></div>}
+      </div>
       {showDescription && <TipsDescription />}
     </div>
   );
