@@ -1,0 +1,13 @@
+@import "../../../variables/variables.scss";
+
+.faqs-wrapper {
+  margin-top: 120px;
+  border-top: 2px solid #b2b2b2;
+  @include headerTemplate;
+  width: 100%;
+}
+
+.faqs-list{
+  margin-top: 70px;
+  width: 100%;
+}

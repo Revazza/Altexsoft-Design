@@ -1,0 +1,78 @@
+@import "../../../variables/variables.scss";
+
+@mixin faqsP {
+  font-family: $font-aloc;
+  color: #191919;
+}
+
+.faqs-item-wrapper {
+  min-height: 150px;
+  width: 100%;
+}
+.faqs-item-header {
+  width: 100%;
+  @include justifyBetween;
+  cursor: pointer;
+  @include hover {
+    &:hover {
+      opacity: 1;
+      background-color: rgba(128, 128, 128, 0.199);
+    }
+  }
+}
+
+.faqs-item-question {
+  width: 15%;
+  height: 150px;
+  @include justifyCenter;
+  justify-content: left;
+  p {
+    font-family: $font-actor;
+    color: #b2b2b2;
+    font-size: 80px;
+  }
+}
+.faqs-item-question-wrapper {
+  width: 85%;
+  height: inherit;
+  @include justifyBetween;
+}
+.faqs-item-ques-title {
+  width: 70%;
+  height: inherit;
+  @include justifyCenter;
+  justify-content: left;
+  p {
+    @include faqsP;
+  }
+}
+.faqs-item-arrow {
+  width: 100px;
+  height: inherit;
+}
+
+.faqs-answer {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  #faqsAnswer {
+    color: #e5e5e5;
+  }
+}
+
+.faqs-article {
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: 0;
+  word-wrap: break-word;
+  p {
+    @include faqsP;
+    font-size: 12px;
+  }
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}

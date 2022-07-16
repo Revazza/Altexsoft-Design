@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Actor&display=swap");
+.faqs-item-wrapper {
+  min-height: 150px;
+  width: 100%;
+}
+
+.faqs-item-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 300ms;
+}
+.faqs-item-header:hover {
+  opacity: 1;
+  background-color: rgba(128, 128, 128, 0.199);
+}
+.faqs-item-header:hover {
+  transition: 300ms;
+  opacity: 0.5;
+}
+.faqs-item-header:hover:hover {
+  opacity: 1;
+  background-color: rgba(128, 128, 128, 0.199);
+}
+
+.faqs-item-question {
+  width: 15%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+}
+.faqs-item-question p {
+  font-family: "Actor", sans-serif;
+  color: #b2b2b2;
+  font-size: 80px;
+}
+
+.faqs-item-question-wrapper {
+  width: 85%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faqs-item-ques-title {
+  width: 70%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+}
+.faqs-item-ques-title p {
+  font-family: "Aclonica", sans-serif;
+  color: #191919;
+}
+
+.faqs-item-arrow {
+  width: 100px;
+  height: inherit;
+}
+
+.faqs-answer {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+.faqs-answer #faqsAnswer {
+  color: #e5e5e5;
+}
+
+.faqs-article {
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: 0;
+  word-wrap: break-word;
+}
+.faqs-article p {
+  font-family: "Aclonica", sans-serif;
+  color: #191919;
+  font-size: 12px;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=FaqsItem.css.map */

@@ -1,6 +1,5 @@
 import React from "react";
 import "../../styles/main/SubNav/SubNav.css";
-import { NavLink } from "react-router-dom";
 
 function SubNav() {
   return (
@@ -14,7 +13,7 @@ function SubNav() {
       </div>
       <div className="vertical-line"></div>
       <div className="subnav-item">
-        <a href="faqs">faqs</a>
+        <a href="#faqsSection">faqs</a>
       </div>
     </section>
   );

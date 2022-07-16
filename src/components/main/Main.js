@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import SubNav from './SubNav';
 import Tips from './Tips/Tips';
 import Glossary from './Glossary/Glossary';
+import Faqs from './FAQS/Faqs';
 
 function Main() {
 
@@ -18,6 +19,7 @@ function Main() {
         <SubNav />
         <Tips />
         <Glossary />
+        <Faqs />
       </main>
     </main>
   )
