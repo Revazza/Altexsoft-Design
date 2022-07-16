@@ -8,8 +8,9 @@
 
 .logo h1 {
   font-family: "Actor", sans-serif;
-  color: #ffffff;
+  text-transform: uppercase;
   letter-spacing: 2px;
+  color: white;
 }
 
 .nav-wrapper {
@@ -54,8 +55,8 @@
   color: #FFFFFF;
   font-family: "Acme", sans-serif;
   font-size: 12px;
-  letter-spacing: 2px;
   text-transform: uppercase;
+  letter-spacing: 2px;
   transition: 300ms;
 }
 .nav-link a:hover {
@@ -75,12 +76,12 @@
   border-radius: 2.5px;
   -webkit-animation-name: showBottomBorder;
           animation-name: showBottomBorder;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 @-webkit-keyframes showBottomBorder {
   from {
@@ -120,8 +121,8 @@
   height: 100%;
   font-family: "Acme", sans-serif;
   font-size: 12px;
-  letter-spacing: 2px;
   text-transform: uppercase;
+  letter-spacing: 2px;
   background-color: transparent;
   outline: none;
   cursor: pointer;

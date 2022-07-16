@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Actor&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Actor&display=swap');
 
 //height
 $headerHeight: 80px;
@@ -6,9 +6,33 @@ $headerHeight: 80px;
 //fonts
 $font-actor: "Actor", sans-serif;
 $nav-font: "Acme", sans-serif;
+$font-aloc:'Aclonica', sans-serif;
 $color-nav: #FFFFFF;
+
 //font-size
 
+//text layout
+@mixin textLayout{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+//section header template
+@mixin headerTemplate {
+  h3{
+    margin-top: 20px;
+    color: #B2B2B2;
+    font-family: $font-actor;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    span{
+      color: #E5E5E5;
+      text-transform: capitalize;
+      font-family: $font-actor;
+    }
+  }
+}
 
 //button
 

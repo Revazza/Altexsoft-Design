@@ -13,7 +13,15 @@
 .choosen-section h1 {
   font-size: 110px;
   color: white;
-  letter-spacing: 2px;
   text-transform: uppercase;
+  letter-spacing: 2px;
   font-family: "Actor", sans-serif;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 200px;
+  bottom: 50px;
 }/*# sourceMappingURL=Main.css.map */

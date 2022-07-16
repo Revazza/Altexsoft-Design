@@ -1,0 +1,16 @@
+@import '../../../variables/variables.scss';
+
+.tips-section{
+  width: 100%;
+  border-top: 2px solid #B2B2B2;
+  margin-top: 80px;
+  @include headerTemplate;
+}
+
+.tips-list{
+  margin-top: 70px;
+  width: 100%;
+  border-bottom: 1px solid #22BF95;
+  
+}
+

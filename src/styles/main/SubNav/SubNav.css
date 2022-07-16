@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Actor&display=swap");
+.subnav-wrapper {
+  width: 70%;
+  height: 80px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 3px 8px;
+  border-radius: 5px;
+  border-top: 5px solid #22BF95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subnav-item {
+  width: 33%;
+  height: 100%;
+  text-align: center;
+}
+.subnav-item a {
+  text-decoration: none;
+  color: #FFFFFF;
+  color: #7F7F7F;
+  font-family: "Acme", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 300ms;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.subnav-item a:hover {
+  color: #22BF95;
+  opacity: 1;
+}
+.subnav-item a:hover {
+  transition: 300ms;
+  opacity: 0.5;
+}
+.subnav-item a:hover:hover {
+  color: #22BF95;
+  opacity: 1;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 45%;
+  background-color: #E5E5E5;
+}/*# sourceMappingURL=SubNav.css.map */

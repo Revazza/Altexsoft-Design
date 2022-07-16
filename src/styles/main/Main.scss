@@ -10,8 +10,15 @@
   h1{
     font-size: 110px;
     color: white;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    @include textLayout;
     font-family: $font-actor;
   }
+}
+
+.content{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 200px;
+  bottom: 50px;
 }

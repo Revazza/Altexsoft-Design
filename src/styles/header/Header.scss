@@ -10,8 +10,8 @@
 .logo {
   h1 {
     font-family: $font-actor;
-    color: #ffffff;
-    letter-spacing: 2px;
+    @include textLayout;
+    color: white;
   }
 }
 .nav-wrapper {
@@ -39,8 +39,7 @@
     @include linkStyles;
     font-family: $nav-font;
     font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    @include textLayout;
     @include hover;
   }
 
@@ -56,9 +55,9 @@
     margin: 0 auto;
     border-radius: 2.5px;
     animation-name: showBottomBorder;
-    animation-duration: 1s;
+    animation-duration: 700ms;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
   }
  
 
@@ -88,8 +87,7 @@
     height: 100%;
     font-family: $nav-font;
     font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    @include textLayout;
     background-color: transparent;
     outline: none;
     cursor: pointer;

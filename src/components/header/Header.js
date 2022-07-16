@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 import "../../styles/header/Header.css";
 
 function Header() {
@@ -13,29 +12,69 @@ function Header() {
         <div className="nav-list-wrapper">
           <nav className="nav-list">
             <div className="nav-link">
-              <NavLink to="why-skout" >
+              <NavLink
+                to="why-skout"
+                state={{
+                  section: "why skout",
+                }}
+              >
                 Why Skout
               </NavLink>
               <div className="underline"></div>
             </div>
             <div className="nav-link">
-              <NavLink to="products">Products</NavLink>
+              <NavLink
+                to="products"
+                state={{
+                  section: "products",
+                }}
+              >
+                Products
+              </NavLink>
               <div className="underline"></div>
             </div>
             <div className="nav-link">
-              <NavLink to="partners">Partners</NavLink>
+              <NavLink
+                to="partners"
+                state={{
+                  section: "partners",
+                }}
+              >
+                Partners
+              </NavLink>
               <div className="underline"></div>
             </div>
             <div className="nav-link">
-              <NavLink to="company">Company</NavLink>
+              <NavLink
+                to="company"
+                state={{
+                  section: "company",
+                }}
+              >
+                Company
+              </NavLink>
               <div className="underline"></div>
             </div>
             <div className="nav-link">
-              <NavLink to="tips-tools">Tips & Tools</NavLink>
+              <NavLink
+                to="tips-tools"
+                state={{
+                  section: "Tips&Tools",
+                }}
+              >
+                Tips & Tools
+              </NavLink>
               <div className="underline"></div>
             </div>
             <div className="nav-link">
-              <NavLink to="blog">Blog</NavLink>
+              <NavLink
+                to="blog"
+                state={{
+                  section: "blog",
+                }}
+              >
+                Blog
+              </NavLink>
               <div className="underline"></div>
             </div>
           </nav>

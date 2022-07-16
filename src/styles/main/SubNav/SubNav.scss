@@ -1,0 +1,41 @@
+@import '../../../variables/variables.scss';
+
+.subnav-wrapper {
+  width: 70%;
+  height: 80px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 3px 8px;
+  border-radius: 5px;
+  border-top: 5px solid #22BF95;
+  @include justifyBetween;
+}
+
+.subnav-item{
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  a{
+    @include linkStyles;
+    color: #7F7F7F;
+    font-family: $nav-font;
+    @include textLayout;
+    @include hover{
+      &:hover{
+        color: #22BF95;
+        opacity: 1;
+      }
+    }
+    font-size: 12px;
+    //making whole div clickable
+    @include justifyCenter;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.vertical-line{
+  width: 2px;
+  height: 45%;
+  background-color: #E5E5E5;
+}

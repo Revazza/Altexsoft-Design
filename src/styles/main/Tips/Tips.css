@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Actor&display=swap");
+.tips-section {
+  width: 100%;
+  border-top: 2px solid #B2B2B2;
+  margin-top: 80px;
+}
+.tips-section h3 {
+  margin-top: 20px;
+  color: #B2B2B2;
+  font-family: "Actor", sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.tips-section h3 span {
+  color: #E5E5E5;
+  text-transform: capitalize;
+  font-family: "Actor", sans-serif;
+}
+
+.tips-list {
+  margin-top: 70px;
+  width: 100%;
+  border-bottom: 1px solid #22BF95;
+}/*# sourceMappingURL=Tips.css.map */
