@@ -15,6 +15,7 @@ footer {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  align-items: initial;
 }
 
 #firstFooterLink {

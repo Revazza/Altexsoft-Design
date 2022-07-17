@@ -13,6 +13,7 @@ footer{
   margin: 0 auto;
   height: 75%;
   @include justifyBetween;
+  align-items: initial;
 }
 #firstFooterLink{
   margin-top: 0;
