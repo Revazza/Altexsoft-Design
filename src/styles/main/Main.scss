@@ -25,3 +25,39 @@
   min-height: 200px;
   bottom: 50px;
 }
+
+@include media(900px)
+{
+  .choosen-section{
+    height: 350px;
+    h1{
+      font-size: 65px;
+    }
+  }
+}
+
+@include media(700px)
+{
+  .choosen-section{
+    h1{
+      font-size: 55px;
+    }
+  }
+  .content{
+    bottom: 30px;
+  }
+}
+
+@include media(500px)
+{
+  
+@include media(700px)
+{
+  .choosen-section{
+    height: 300px;
+    h1{
+      font-size: 40px;
+    }
+  }
+}
+}

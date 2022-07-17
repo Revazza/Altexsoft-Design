@@ -18,8 +18,11 @@ function Main() {
       </section>
       <main className='content'>
         <SubNav />
+        <div id='tipsSection'></div>
         <Tips />
+        <div id="glossarySection"></div>
         <Glossary />
+        <div id="faqsSection"></div>
         <Faqs />
       </main>
       <Footer />

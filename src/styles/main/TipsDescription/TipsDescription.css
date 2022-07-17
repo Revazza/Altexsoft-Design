@@ -8,6 +8,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  align-items: initial;
   position: relative;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .after-article {
-  height: 20px;
+  height: 30px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -65,7 +66,16 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.after-article .tip-oval {
+.after-article .tip-report {
+  margin-left: 20px;
+}
+.after-article .tip-report p {
+  color: #7F7F7F;
+  font-size: 13px;
+  padding-bottom: 0;
+}
+
+.tip-after-oval {
   width: 29px;
   height: 29px;
   border-radius: 100%;
@@ -75,15 +85,69 @@
   align-items: center;
   flex-direction: row;
 }
-.after-article .tip-oval span {
+.tip-after-oval span {
   font-family: "Actor", sans-serif;
   color: #B2B2B2;
 }
-.after-article .tip-report {
-  margin-left: 20px;
+
+@media screen and (max-width: 1000px) {
+  .tips-article p {
+    font-size: 14px;
+  }
 }
-.after-article .tip-report p {
-  color: #7F7F7F;
-  font-size: 13px;
-  padding-bottom: 0;
+@media screen and (max-width: 800px) {
+  .tips-img-wrapper {
+    height: 60%;
+  }
+  .tips-article p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .tips-img-wrapper {
+    height: 30%;
+  }
+  .tips-description {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .tips-photo {
+    width: 100%;
+  }
+  .tips-title h3 {
+    min-height: 40px;
+  }
+  .tips-img-wrapper {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .tips-article {
+    width: 90%;
+    min-height: 350px;
+    padding: 0;
+  }
+  .tips-article p {
+    padding: 0;
+    letter-spacing: 1px;
+  }
+  .tip-report p {
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .tips-description {
+    margin-top: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tips-title h3 {
+    font-size: 14px;
+  }
+  .tips-img-wrapper {
+    width: 150px;
+  }
+  .tips-article p {
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=TipsDescription.css.map */

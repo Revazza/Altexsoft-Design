@@ -52,4 +52,29 @@
   width: 2px;
   height: 45%;
   background-color: #E5E5E5;
+}
+
+@media screen and (max-width: 900px) {
+  .subnav-wrapper {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .subnav-wrapper {
+    width: 80%;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .subnav-wrapper {
+    width: 90%;
+  }
+  .subnav-item a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .subnav-wrapper {
+    width: 100%;
+  }
 }/*# sourceMappingURL=SubNav.css.map */

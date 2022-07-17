@@ -80,4 +80,43 @@
 .crossY {
   height: 15px;
   width: 1px;
+}
+
+@media screen and (max-width: 650px) {
+  .tips-oval {
+    z-index: 20;
+  }
+  .tips-title h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .tips-oval {
+    right: 0px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+  }
+  .tips-oval .crossX {
+    width: 7px;
+    height: 1px;
+  }
+  .tips-oval .crossY {
+    width: 1px;
+    height: 7px;
+  }
+  .tips-header .tips-title {
+    height: 50px;
+  }
+  .tips-header .tips-title p {
+    font-size: 12px;
+  }
+  .tips-header .tips-number {
+    height: 50px;
+    align-items: initial;
+    font-size: 35px;
+  }
+  .tips-item {
+    min-height: 50px;
+  }
 }/*# sourceMappingURL=TipsItem.css.map */

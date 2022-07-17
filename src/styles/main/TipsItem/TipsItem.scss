@@ -63,4 +63,46 @@
   width: 1px;
 }
 
+@include media(650px) {
+  .tips-oval {
+    z-index: 20;
+  }
+  .tips-title {
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
 
+@include media(450px) {
+  .tips-oval {
+    right: 0px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    .crossX {
+      width: 7px;
+      height: 1px;
+    }
+    .crossY{
+      width: 1px;
+      height: 7px;
+    }
+  }
+  .tips-header {
+    .tips-title {
+      p {
+        font-size: 12px;
+      }
+      height: 50px;
+    }
+    .tips-number {
+      height: 50px;
+      align-items: initial;
+      font-size: 35px;
+    }
+  }
+  .tips-item {
+    min-height: 50px;
+  }
+}

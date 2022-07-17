@@ -23,4 +23,29 @@
   position: relative;
   min-height: 200px;
   bottom: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .choosen-section {
+    height: 350px;
+  }
+  .choosen-section h1 {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .choosen-section h1 {
+    font-size: 55px;
+  }
+  .content {
+    bottom: 30px;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 700px) {
+  .choosen-section {
+    height: 300px;
+  }
+  .choosen-section h1 {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=Main.css.map */

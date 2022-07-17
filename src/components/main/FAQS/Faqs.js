@@ -4,7 +4,7 @@ import FaqsItem from "./FaqsItem";
 
 function Faqs() {
   return (
-    <section className="faqs-wrapper" id="faqsSection">
+    <section className="faqs-wrapper" >
       <h3>
         Skout <span>FAQs</span>
       </h3>

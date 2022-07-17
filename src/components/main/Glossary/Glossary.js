@@ -10,7 +10,7 @@ function Glossary() {
   };
 
   return (
-    <section className="glossary-wrapper" id="glossarySection">
+    <section className="glossary-wrapper" >
       <h3>
         Skout <span>Glossary</span>
       </h3>

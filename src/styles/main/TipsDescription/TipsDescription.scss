@@ -1,24 +1,25 @@
-@import '../../../variables/variables.scss';
+@import "../../../variables/variables.scss";
 
-.tips-description{
+.tips-description {
   margin: 40px 0px;
   width: 90%;
   min-height: 400px;
   @include justifyBetween;
+  align-items: initial;
   position: relative;
 }
 
-.tips-photo{
+.tips-photo {
   height: inherit;
   width: 35%;
 }
 
-.tips-article{
+.tips-article {
   width: 52%;
   min-height: 400px;
   padding: 40px 0;
   box-sizing: border-box;
-  p{
+  p {
     font-family: $font-aloc;
     font-size: 16px;
     color: #191919;
@@ -26,9 +27,9 @@
   }
 }
 
-.tips-title{
+.tips-title {
   height: inherit;
-  h3{
+  h3 {
     margin: 0;
     font-family: $font-aloc;
     text-transform: capitalize;
@@ -38,42 +39,118 @@
   }
 }
 
-.tips-img-wrapper{
+.tips-img-wrapper {
   width: 100%;
   height: 70%;
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
 
-.after-article{
-  height: 20px;
+.after-article {
+  height: 30px;
   height: fit-content;
   position: absolute;
   bottom: 20px;
   @include justifyBetween;
-  .tip-oval{
-    width: 29px;
-    height: 29px;
-    border-radius: 100%;
-    border: 1px solid $color-primary-grey;
-    @include justifyCenter;
-    span{
-      font-family: $font-actor;
-      color: $color-primary-grey;
-    }
-  }
-  .tip-report{
+  .tip-report {
     margin-left: 20px;
-    p{
+    p {
       color: $color-dark-grey;
       font-size: 13px;
       padding-bottom: 0;
     }
   }
 }
+.tip-after-oval {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  border: 1px solid $color-primary-grey;
+  @include justifyCenter;
+  span {
+    font-family: $font-actor;
+    color: $color-primary-grey;
+  }
+}
 
+@include media(1000px) {
+  .tips-article {
+    p {
+      font-size: 14px;
+    }
+  }
+}
 
+@include media(800px) {
+  .tips-img-wrapper {
+    height: 60%;
+  }
+  .tips-article {
+    p {
+      font-size: 12px;
+    }
+  }
+}
 
+@include media(650px) {
+  .tips-img-wrapper {
+    height: 30%;
+  }
+  .tips-description {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .tips-photo {
+    width: 100%;
+  }
+  .tips-title h3 {
+    min-height: 40px;
+  }
+  .tips-img-wrapper {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .tips-article {
+    width: 90%;
+    min-height: 350px;
+
+    padding: 0;
+    p {
+      padding: 0;
+      letter-spacing: 1px;
+    }
+  }
+
+  .tip-report {
+    p {
+      font-size: 10px !important;
+    }
+  }
+}
+
+@include media(450px)
+{
+  .tips-description{
+    margin-top: 18px;
+  }
+}
+
+@include media(400px) {
+  .tips-title{
+    h3{
+      font-size: 14px;
+    }
+  }
+  .tips-img-wrapper {
+    width: 150px;
+  }
+  .tips-article {
+    p {
+      font-size: 11px;
+    }
+  }
+}

@@ -39,3 +39,32 @@
   height: 45%;
   background-color: #E5E5E5;
 }
+
+@include media(900px)
+{
+  .subnav-wrapper{
+    height: 60px;
+  }
+}
+
+@include media(700px) {
+  .subnav-wrapper{
+    width: 80%;
+    height: 50px;
+  }
+}
+@include media(550px) {
+  .subnav-wrapper{
+    width: 90%;
+  }
+  .subnav-item{
+    a{
+      font-size: 10px;
+    }
+  }
+}
+@include media(450px) {
+  .subnav-wrapper{
+    width: 100%;
+  }
+}

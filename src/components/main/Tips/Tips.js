@@ -4,7 +4,7 @@ import TipsItem from './TipsItem';
 
 function Tips() {
   return (
-    <section className='tips-section' id='tipsSection'>
+    <section className='tips-section' >
       <h3>Skout <span>Tips</span></h3>
 
       <div className='tips-list'>

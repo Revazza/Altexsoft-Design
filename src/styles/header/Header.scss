@@ -209,6 +209,12 @@ $nav-link-color: #fff;
   }
 }
 
+
+
+//tablets
+
+
+
 #showSlider,
 #hideSlider,
 #menuAnimation,
@@ -263,19 +269,19 @@ $nav-link-color: #fff;
   animation-name: menuCloseAnimation;
 }
 @keyframes menuCloseAnimation {
-  from{
+  from {
     transform: rotate(1080deg);
   }
-  to{
+  to {
     transform: rotate(0deg);
   }
 }
 
 @keyframes menuAnimation {
-  from{
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(1080deg);
   }
 }
