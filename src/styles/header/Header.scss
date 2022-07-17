@@ -1,5 +1,24 @@
 @import "../../variables/variables.scss";
 
+$nav-link-color: #fff;
+
+@mixin navBorderAnimation($color) {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  border-bottom: 2px solid $color;
+  top: 32px;
+  left: -5px;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 2.5px;
+  animation-name: showBottomBorder;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
 .header-wrapper {
   position: fixed;
   width: 100%;
@@ -14,7 +33,7 @@
   transition: 300ms ease-in;
 }
 
-.header-active-bckg{
+.header-active-bckg {
   transition: 300ms ease-in;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -53,23 +72,11 @@
     font-size: 12px;
     @include textLayout;
     @include hover;
+    color: $nav-link-color;
   }
 
   .active::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 50%;
-    border-bottom: 1px solid #ffffff;
-    top: 32px;
-    left: -5px;
-    right: 0;
-    margin: 0 auto;
-    border-radius: 2.5px;
-    animation-name: showBottomBorder;
-    animation-duration: 700ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
+    @include navBorderAnimation(#fff);
   }
 
   @keyframes showBottomBorder {
@@ -87,6 +94,16 @@
   width: 32%;
   @include justifyAround;
 }
+
+@mixin btnHover($bgColor, $txtColor) {
+  @include hover {
+    &:hover {
+      background-color: $bgColor;
+      opacity: 1;
+      color: $txtColor;
+    }
+  }
+}
 .nav-btn {
   height: 50%;
   width: 50%;
@@ -102,17 +119,163 @@
     outline: none;
     cursor: pointer;
     color: #ffffff;
-
-    @include hover {
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.897);
-        opacity: 1;
-        color: #22bf95;
-      }
-    }
+    @include btnHover(rgba(255, 255, 255, 0.897), $color-green);
   }
 }
 
 #secondNavBtn {
   width: 30%;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@include media(1200px) {
+  .nav-list-wrapper {
+    justify-content: space-between;
+  }
+  .nav-list {
+    width: 70%;
+  }
+}
+
+@include media(1000px) {
+  .logo {
+    font-size: larger;
+  }
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    div {
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      margin-top: 9px;
+    }
+  }
+  .active::after {
+    @include navBorderAnimation($color-green);
+  }
+  .nav-wrapper {
+    position: relative;
+  }
+
+  .nav-list-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 90vh;
+    background-color: #fff;
+    bottom: 0;
+    right: 100vw;
+    flex-direction: column;
+    justify-content: initial;
+  }
+  .nav-list {
+    flex-direction: column;
+    position: relative;
+    top: 40px;
+    height: 45vh;
+    a {
+      font-size: 14px;
+      color: $color-green;
+    }
+  }
+
+  //Navigation Buttons
+  .nav-btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    flex-direction: column;
+    justify-content: initial;
+  }
+  .nav-btn {
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    button {
+      border-radius: 25px;
+      color: $color-green;
+      border-color: $color-green;
+      @include btnHover($color-green, rgba(255, 255, 255, 0.897));
+    }
+  }
+  #secondNavBtn {
+    width: 110px;
+  }
+}
+
+#showSlider,
+#hideSlider,
+#menuAnimation,
+#menuCloseAnimation {
+  animation-timing-function: ease-in-out;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+}
+
+#showSlider {
+  animation-name: showSlider;
+}
+
+@keyframes showSlider {
+  from {
+    right: 100vw;
+  }
+  to {
+    right: 0;
+  }
+}
+#hideSlider {
+  animation-name: hideSlider;
+}
+@keyframes hideSlider {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100vw;
+  }
+}
+
+#burgerFirstLine {
+  transform: rotate(45deg);
+  position: relative;
+  top: 12px;
+}
+#burgerMiddleLine {
+  visibility: hidden;
+}
+#burgerThirdLine {
+  transform: rotate(-45deg);
+  bottom: 12px;
+  position: relative;
+}
+
+#menuAnimation {
+  animation-name: menuAnimation;
+}
+#menuCloseAnimation {
+  animation-name: menuCloseAnimation;
+}
+@keyframes menuCloseAnimation {
+  from{
+    transform: rotate(1080deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes menuAnimation {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(1080deg);
+  }
 }

@@ -1,6 +1,5 @@
 @import '../../variables/variables.scss';
 
-$primaryColor:#7F7F7F;
 
 footer{
   width:100%;
@@ -23,7 +22,7 @@ footer{
   width: 80%;
   margin: 0 auto;
   height: 10%;
-  border-top: 2px solid #B2B2B2;
+  border-top: 2px solid $color-primary-grey;
   padding: 20px 0;
   @include justifyBetween;
 }
@@ -47,10 +46,8 @@ footer{
     float: right;
 
   }
-  color: $primaryColor;
+  color: $color-dark-grey;
 }
-
-
 .footer-link-wrapper{
   width: 25%;
   height: 100%;
@@ -67,9 +64,7 @@ footer{
   a,p{
     font-family: $nav-font;
     @include textLayout;
-    color: $primaryColor;
-    
-  }
+    color: $color-dark-grey;  }
   p{
     margin-top: 5px;
     font-size: 20px;

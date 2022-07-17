@@ -7,7 +7,13 @@ $headerHeight: 80px;
 $font-actor: "Actor", sans-serif;
 $nav-font: "Acme", sans-serif;
 $font-aloc:'Aclonica', sans-serif;
+
+//colors
+$color-green:#22BF95;
+$color-primary-grey:#B2B2B2;
+$color-dark-grey:#7F7F7F;
 $color-nav: #FFFFFF;
+
 
 //font-size
 
@@ -80,6 +86,13 @@ $color-nav: #FFFFFF;
   &:hover {
     transition: 300ms;
     color: gray;
+  }
+}
+
+
+@mixin media ($width) {
+  @media screen and (max-width:$width) {
+    @content;
   }
 }
 

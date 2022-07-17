@@ -2,7 +2,7 @@
 
 .faqs-wrapper {
   margin-top: 120px;
-  border-top: 2px solid #b2b2b2;
+  border-top: 2px solid $color-primary-grey;
   @include headerTemplate;
   width: 100%;
 }

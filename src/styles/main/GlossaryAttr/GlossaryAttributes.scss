@@ -60,7 +60,7 @@
       font-family: $font-aloc;
       font-size: 14px;
       margin-top: 6px;
-      color: #7f7f7f;
+      color: $color-dark-grey;
       cursor: pointer;
       @include hover {
         &:hover {

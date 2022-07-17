@@ -58,17 +58,17 @@
     width: 29px;
     height: 29px;
     border-radius: 100%;
-    border: 1px solid #B2B2B2;
+    border: 1px solid $color-primary-grey;
     @include justifyCenter;
     span{
       font-family: $font-actor;
-      color: #B2B2B2;
+      color: $color-primary-grey;
     }
   }
   .tip-report{
     margin-left: 20px;
     p{
-      color: #7F7F7F;
+      color: $color-dark-grey;
       font-size: 13px;
       padding-bottom: 0;
     }

@@ -17,7 +17,7 @@
   text-align: center;
   a{
     @include linkStyles;
-    color: #7F7F7F;
+    color: $color-dark-grey;
     font-family: $nav-font;
     @include textLayout;
     @include hover{

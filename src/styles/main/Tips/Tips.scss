@@ -2,7 +2,7 @@
 
 .tips-section{
   width: 100%;
-  border-top: 2px solid #B2B2B2;
+  border-top: 2px solid $color-primary-grey;
   margin-top: 80px;
   @include headerTemplate;
 }

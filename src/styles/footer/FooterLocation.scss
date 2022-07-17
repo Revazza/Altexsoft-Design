@@ -1,6 +1,5 @@
 @import "../../variables/variables.scss";
 
-$primaryColor: #7f7f7f;
 
 .footer-location {
   height: 100%;
@@ -17,7 +16,7 @@ $primaryColor: #7f7f7f;
   height: inherit;
   label,a {
     font-family: $font-aloc;
-    color: $primaryColor;
+    color: $color-dark-grey;
     letter-spacing: 1px;
     font-size: 14px;
   }
