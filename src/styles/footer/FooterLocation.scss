@@ -1,6 +1,5 @@
 @import "../../variables/variables.scss";
 
-
 .footer-location {
   height: 100%;
   border-top: 2px solid #22bf95;
@@ -14,7 +13,8 @@
 .footer-loc-phone,
 .footer-loc-title {
   height: inherit;
-  label,a {
+  label,
+  a {
     font-family: $font-aloc;
     color: $color-dark-grey;
     letter-spacing: 1px;
@@ -39,8 +39,8 @@
   a {
     text-decoration: none;
     color: #22bf95;
-    @include hover{
-      &:hover{
+    @include hover {
+      &:hover {
         color: #10926f;
         opacity: 1;
         text-decoration: underline;
@@ -48,4 +48,51 @@
     }
     float: right;
   }
+}
+
+@include media(1050px) {
+  .footer-location label {
+    font-size: 14px;
+  }
+  .footer-loc-phone,
+  .footer-loc-address {
+    label {
+      font-size: 11px;
+    }
+  }
+}
+
+@include media(850px) {
+  .footer-loc-map {
+    text-align: right;
+  }
+}
+
+@include media(700px) {
+  .footer-location {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .footer-loc-address,
+  .footer-loc-map,
+  .footer-loc-phone,
+  .footer-loc-title {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .footer-loc-map {
+    position: relative;
+    a{
+      position: absolute;
+      left: 0;
+    }
+    margin-bottom: 20px;
+  }
+}
+
+@include media(500px)
+{
+  
 }

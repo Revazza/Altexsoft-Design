@@ -5,7 +5,7 @@
   width: 100%;
   @include headerTemplate;
   border-top: 2px solid $color-primary-grey;
-  position:relative;
+  position: relative;
 }
 
 .glossary-topic {
@@ -22,7 +22,7 @@
   width: 38%;
   height: 60%;
   h3 {
-    font-size: 50px;
+    font-size: 45px;
     color: #1a1a1a;
     font-weight: 400;
   }
@@ -30,7 +30,7 @@
 
 .glossary-topic-description {
   height: 70%;
-  width: 60%;
+  width: 70%;
   position: relative;
   left: 60px;
   top: 33px;
@@ -48,12 +48,77 @@
 }
 
 .glossary-article {
-
   word-wrap: break-word;
 
   p {
     font-family: $font-aloc;
     font-size: 16px;
     color: #191919;
+  }
+}
+
+@include media(1000px) {
+  .glossary-description {
+    position: relative;
+    left: 80px;
+  }
+  .glossary-topic-description {
+    width: 100%;
+  }
+}
+
+@include media(750px) {
+  .glossary-description {
+    width: 80%;
+    left: 0;
+    top: 110px;
+    h3 {
+      font-size: 35px;
+    }
+  }
+  .glossary-vertical-line {
+    height: 70%;
+    top: 0;
+  }
+  .glossary-topic-description {
+    height: auto;
+  }
+  .glossary-article {
+    p {
+      font-size: 13px;
+    }
+  }
+  .glossary-topic-description {
+    width: 80%;
+  }
+}
+
+@include media(650px) {
+  .glossary-description {
+    h3 {
+      font-size: 25px;
+    }
+  }
+  .glossary-article {
+    p {
+      font-size: 11px;
+    }
+  }
+}
+@include media(500px) {
+  .glossary-description {
+    h3 {
+      font-size: 16px;
+    }
+    top: 150px;
+  }
+  .glossary-topic-description{
+    left: 0;
+    width: 100%;
+  }
+  .glossary-article {
+    p {
+      font-size: 11px;
+    }
   }
 }

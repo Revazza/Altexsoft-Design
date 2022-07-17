@@ -23,7 +23,7 @@ function Footer() {
             <a href="#">Careers</a>
           </div>
           <div className="footer-link">
-            <a href="#">Call the SOC</a>
+            <a href="#">Better Call Saul</a>
             <p>1-855-838-4500</p>
           </div>
         </div>
@@ -65,7 +65,7 @@ New York, NY, 10019"
         </div>
         <div className="footer-website-title">
           <h3>skout</h3>
-          <span>cybersecurity</span>
+          <span>cybersecur</span>
         </div>
       </div>
     </footer>

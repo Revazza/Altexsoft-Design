@@ -4,7 +4,7 @@ import FaqsItem from "./FaqsItem";
 
 function Faqs() {
   return (
-    <section className="faqs-wrapper" >
+    <section className="faqs-wrapper">
       <h3>
         Skout <span>FAQs</span>
       </h3>
@@ -17,6 +17,9 @@ function Faqs() {
         <FaqsItem title="Can I get a Demo?" />
         <FaqsItem title="Can I create my own security package?" />
         <FaqsItem title="Is SKOUT only for businesses? Or can I get SKOUT for personal use?" />
+      </div>
+      <div className="faqs-btn">
+        <button>More Questions</button>
       </div>
     </section>
   );

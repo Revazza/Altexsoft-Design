@@ -21,4 +21,21 @@
 .faqs-list {
   margin-top: 70px;
   width: 100%;
+}
+
+.faqs-btn {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.faqs-btn button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "Acme", sans-serif;
+  color: #22BF95;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=Faqs.css.map */

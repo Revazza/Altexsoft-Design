@@ -105,4 +105,37 @@
   display: block;
   height: 2px;
   background-color: #22bf95;
+}
+
+@media screen and (max-width: 750px) {
+  .gloss-attr-wrapper {
+    height: 200px;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transform: translate(-50%, -50%);
+  }
+  .gloss-list-item-line {
+    width: 30px;
+    left: -40px;
+  }
+  .gloss-list ul {
+    width: 75%;
+  }
+  .gloss-list ul li {
+    margin-top: 17px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .gloss-attr-wrapper {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gloss-attr-wrapper {
+    width: 85%;
+    top: 36%;
+  }
 }/*# sourceMappingURL=GlossaryAttributes.css.map */

@@ -13,7 +13,6 @@ const items = [
   "IP Address",
   "Malware",
   "Penetration Test",
-  "Phishing/Spearphishing",
   "Ransomware",
   "Session Hijacking",
   "Social Engineering",
@@ -38,7 +37,7 @@ function GlossaryAttributes(props) {
     props.onChangeSection(event.target.id);
   };
 
-  let itemsPerPage = 15;
+  let itemsPerPage = window.innerWidth > 750 ? 15 : 5;
 
   useEffect(() => {
     const slicedItems = items.slice(0, itemsPerPage);

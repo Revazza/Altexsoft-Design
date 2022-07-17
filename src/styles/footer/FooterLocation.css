@@ -17,7 +17,8 @@
 .footer-loc-title {
   height: inherit;
 }
-.footer-loc-address label, .footer-loc-address a,
+.footer-loc-address label,
+.footer-loc-address a,
 .footer-loc-map label,
 .footer-loc-map a,
 .footer-loc-phone label,
@@ -68,4 +69,41 @@
   color: #10926f;
   opacity: 1;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1050px) {
+  .footer-location label {
+    font-size: 14px;
+  }
+  .footer-loc-phone label,
+.footer-loc-address label {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .footer-loc-map {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer-location {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+  }
+  .footer-loc-address,
+.footer-loc-map,
+.footer-loc-phone,
+.footer-loc-title {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .footer-loc-map {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .footer-loc-map a {
+    position: absolute;
+    left: 0;
+  }
 }/*# sourceMappingURL=FooterLocation.css.map */

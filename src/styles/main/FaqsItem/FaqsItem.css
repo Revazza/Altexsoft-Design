@@ -96,4 +96,51 @@
 
 .rotate-arrow {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .faqs-article {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .faqs-item-ques-title p {
+    font-size: 14px;
+  }
+  .faqs-item-question p {
+    font-size: 60px;
+  }
+  #faqsItemAnswer {
+    align-items: initial;
+  }
+  .faqs-item-wrapper {
+    min-height: 90px;
+  }
+  .faqs-item-question {
+    height: 70px;
+  }
+  .faqs-answer {
+    margin: 15px 0;
+    align-items: initial;
+  }
+  .faqs-item-arrow img {
+    width: 20px;
+    float: right;
+    position: relative;
+    right: 10px;
+  }
+  .faqs-item-ques-title {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .faqs-item-question p {
+    font-size: 35px;
+  }
+  .faqs-item-ques-title p {
+    font-size: 12px;
+  }
+  .faqs-article p {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=FaqsItem.css.map */

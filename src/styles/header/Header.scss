@@ -140,7 +140,7 @@ $nav-link-color: #fff;
   }
 }
 
-@include media(1000px) {
+@include media(1030px) {
   .logo {
     font-size: larger;
   }
@@ -167,7 +167,7 @@ $nav-link-color: #fff;
   .nav-list-wrapper {
     position: fixed;
     width: 100vw;
-    height: 90vh;
+    height: 91.5vh;
     background-color: #fff;
     bottom: 0;
     right: 100vw;
@@ -209,12 +209,6 @@ $nav-link-color: #fff;
   }
 }
 
-
-
-//tablets
-
-
-
 #showSlider,
 #hideSlider,
 #menuAnimation,
@@ -252,6 +246,7 @@ $nav-link-color: #fff;
   transform: rotate(45deg);
   position: relative;
   top: 12px;
+  background-color: #FF4949;
 }
 #burgerMiddleLine {
   visibility: hidden;
@@ -260,6 +255,7 @@ $nav-link-color: #fff;
   transform: rotate(-45deg);
   bottom: 12px;
   position: relative;
+  background-color: #FF4949;
 }
 
 #menuAnimation {

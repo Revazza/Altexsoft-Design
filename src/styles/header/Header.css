@@ -169,7 +169,7 @@
     width: 70%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
   .logo {
     font-size: larger;
   }
@@ -212,7 +212,7 @@
   .nav-list-wrapper {
     position: fixed;
     width: 100vw;
-    height: 90vh;
+    height: 91.5vh;
     background-color: #fff;
     bottom: 0;
     right: 100vw;
@@ -325,6 +325,7 @@
   transform: rotate(45deg);
   position: relative;
   top: 12px;
+  background-color: #FF4949;
 }
 
 #burgerMiddleLine {
@@ -335,6 +336,7 @@
   transform: rotate(-45deg);
   bottom: 12px;
   position: relative;
+  background-color: #FF4949;
 }
 
 #menuAnimation {

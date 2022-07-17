@@ -98,3 +98,42 @@
     background-color: #22bf95;
   }
 }
+
+@include media(750px)
+{
+  .gloss-attr-wrapper{
+    height: 200px;
+    width: 50%;
+    top: 30%;
+    left: 50%; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transform: translate(-50%, -50%);
+  }
+  .gloss-list-item-line{
+    width: 30px;
+    left: -40px;
+  }
+  .gloss-list{
+    ul{
+      width: 75%;
+      li{
+        margin-top: 17px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@include media(650px)
+{
+  .gloss-attr-wrapper{
+    width: 70%;
+  }
+}
+
+@include media(500px) {
+  .gloss-attr-wrapper{
+    width: 85%;
+    top: 36%;
+  }
+}

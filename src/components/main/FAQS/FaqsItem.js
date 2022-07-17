@@ -34,7 +34,7 @@ function FaqsItem(props) {
     <div className="faqs-item-wrapper">
       <Collapsible trigger={faqsHeader}>
         <div className="faqs-answer">
-          <div className="faqs-item-question" >
+          <div className="faqs-item-question" id="faqsItemAnswer">
             <p id="faqsAnswer">A</p>
           </div>
           <article className="faqs-article">
