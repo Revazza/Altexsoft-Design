@@ -2,7 +2,6 @@
 .choosen-section {
   width: 100%;
   height: 500px;
-  background: rgb(44, 221, 236);
   background: linear-gradient(90deg, rgb(44, 221, 236) 0%, rgb(0, 248, 110) 100%);
   display: flex;
   justify-content: center;
@@ -15,6 +14,14 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: "Actor", sans-serif;
+  -webkit-animation-name: showSection;
+          animation-name: showSection;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .content {

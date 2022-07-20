@@ -6,20 +6,29 @@ import Collapsible from "react-collapsible";
 
 function TipsItem(props) {
   const [showDescription, setShowDescription] = useState(false);
+  const [clickable, setClickable] = useState(true);
 
   const handleShowDescription = () => {
-    if (showDescription) {
+    if (clickable) {
+      if (showDescription) {
+        setTimeout(() => {
+          setShowDescription(false);
+        }, 500);
+      } else {
+        setShowDescription(true);
+      }
+      setClickable(false);
       setTimeout(() => {
-        setShowDescription((prevState) => !prevState);
+        setClickable(true);
       }, 500);
-    } else {
-      setShowDescription((prevState) => !prevState);
     }
   };
+  
+  const showItemHeader = !showDescription && clickable;
 
   const myElement = (
     <React.Fragment>
-      {!showDescription && (
+      {showItemHeader && (
         <div className="tips-header" onClick={handleShowDescription}>
           <div className="tips-number">
             <p>{props.itemNum}</p>

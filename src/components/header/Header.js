@@ -1,22 +1,16 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import useScrollDirection from "../../hooks/useScrollDirection";
 import "../../styles/header/Header.css";
 
 function Header() {
-  //changing header background
-  const [headerClass, setHeaderClass] = useState("header-wrapper");
+
+  const scrollDirection = useScrollDirection();
+  
   const [showSlider, setShowSlider] = useState(false);
   const [sliderID, setSliderID] = useState("");
   const [menuID,setMenuID] = useState();
-  const changeBackground = () => {
-    if (window.scrollY > 150 && !headerClass.includes("header-active-bckg")) {
-      setHeaderClass("header-wrapper header-active-bckg");
-    } else if (window.scrollY < 150) {
-      setHeaderClass("header-wrapper");
-    }
-  };
-
-  window.addEventListener("scroll", changeBackground);
+  const headerClass = scrollDirection === 'down' && !showSlider ? 'header-wrapper down':'header-wrapper';
 
   const handleMenuClick = () => {
     if (!showSlider) {
@@ -33,6 +27,7 @@ function Header() {
   };
 
   return (
+    // <header className={headerClass}>
     <header className={headerClass}>
       <div className="nav-wrapper">
         <div className="logo">

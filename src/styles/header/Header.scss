@@ -9,7 +9,7 @@ $nav-link-color: #fff;
   width: 50%;
   border-bottom: 2px solid $color;
   top: 32px;
-  left: -5px;
+  left: -3px;
   right: 0;
   margin: 0 auto;
   border-radius: 2.5px;
@@ -20,22 +20,24 @@ $nav-link-color: #fff;
 }
 
 .header-wrapper {
-  position: fixed;
   width: 100%;
   height: $headerHeight;
-  background: rgb(44, 221, 236);
+  z-index: 40;
+
+  position: fixed;
+  top: 0px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
   background: linear-gradient(
     90deg,
     rgba(44, 221, 236, 1) 0%,
     rgba(0, 248, 110, 1) 100%
   );
-  z-index: 40;
-  transition: 300ms ease-in;
 }
 
-.header-active-bckg {
-  transition: 300ms ease-in;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+.down {
+  top: -$headerHeight;
 }
 
 .logo {
@@ -156,6 +158,7 @@ $nav-link-color: #fff;
       background-color: white;
       margin-top: 9px;
     }
+    cursor: pointer;
   }
   .active::after {
     @include navBorderAnimation($color-green);
@@ -246,7 +249,7 @@ $nav-link-color: #fff;
   transform: rotate(45deg);
   position: relative;
   top: 12px;
-  background-color: #FF4949;
+  background-color: #ff4949;
 }
 #burgerMiddleLine {
   visibility: hidden;
@@ -255,7 +258,7 @@ $nav-link-color: #fff;
   transform: rotate(-45deg);
   bottom: 12px;
   position: relative;
-  background-color: #FF4949;
+  background-color: #ff4949;
 }
 
 #menuAnimation {
