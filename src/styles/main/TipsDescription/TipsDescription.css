@@ -55,7 +55,6 @@
 
 .after-article {
   height: 30px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: absolute;

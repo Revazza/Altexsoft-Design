@@ -167,7 +167,7 @@ $nav-link-color: #fff;
   .nav-list-wrapper {
     position: fixed;
     width: 100vw;
-    height: 91.5vh;
+    height: calc(100vh - $headerHeight);
     background-color: #fff;
     bottom: 0;
     right: 100vw;

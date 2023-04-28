@@ -77,7 +77,7 @@
     font-size: 14px;
   }
   .footer-loc-phone label,
-.footer-loc-address label {
+  .footer-loc-address label {
     font-size: 11px;
   }
 }
@@ -93,9 +93,9 @@
     align-items: initial;
   }
   .footer-loc-address,
-.footer-loc-map,
-.footer-loc-phone,
-.footer-loc-title {
+  .footer-loc-map,
+  .footer-loc-phone,
+  .footer-loc-title {
     margin-top: 10px;
     width: 100%;
   }
